@@ -1,23 +1,98 @@
 <!DOCTYPE html>
 <html>
-    <head>
+	<head>
 		<style>
-			button {
+			body {
+			width: 340px;
+			}
+			
+			.line {
+			margin-bottom: 10px;
+			}
+			
+			.title {
+			width: 200px;
 			white-space:pre;
-			word-wrap: break-word;			
+			word-wrap: break-word;
 			overflow: hidden;
-			text-overflow: ellipsis; 
-			height: 30px;
-			width: 300px;
+			text-overflow: ellipsis;
+			display: inline-block;
+			}
+			
+			.button-volume {
+			width: 24px;
+			height: 18px;
+			border: none;
+			background-color: #FFFFFF;
+			display: inline-block;
+			margin-left: 10px;
+			}
+			
+			.on{
+			background-image: url("./images/glyphicons-185-volume-up.png");
+			}
+			
+			.off{
+			background-image: url("./images/glyphicons-183-mute.png");
+			}
+			
+			.button-play {
+			width: 16px;
+			height: 18px;
+			border: none;
+			background-color: #FFFFFF;
+			display: inline-block;
+			margin-left: 10px;
+			}
+			
+			.play{
+			background-image: url("./images/glyphicons-174-play.png");
+			}
+			
+			.pause{
+			background-image: url("./images/glyphicons-175-pause.png");
+			}
+			
+			button:focus {
+			outline:0;
+			}
+			
+			.slider {
+			-webkit-appearance: none;
+			width: 60px;
+			height: 3px;
+			border-radius: 5px;   
+			background: #d3d3d3;
 			outline: none;
+			-webkit-transition: .2s;
+			transition: opacity .2s;
+			position: relative;
+			top: -6px;
+			}
+			
+			.slider::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			appearance: none;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%; 
+			background: #FF0000;
+			cursor: pointer;
+			}
+			
+			.slider::-moz-range-thumb {
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: #FF0000;
+			cursor: pointer;
 			}
 		</style>
 	</head>
-    <body>
+	<body>
 		<div id="buttonList">
-		
+			
 		</div>
-		<!-- <button id="changeColor"></button> -->
 		<script src="popup.js"></script>
 	</body>
 </html>
