@@ -1,8 +1,8 @@
 {
 	"name": "YouTubePlay",
 	"version": "1.0",
-	"description": "Build an Extension!",
-	"permissions": ["tabs", "declarativeContent", "storage", "http://*/", "https://*/"],
+	"description": "Gérer vos videos YouTube depuis tous vos onglets.",
+	"permissions": ["tabs", "declarativeContent", "http://*/", "https://*/"],
 	"background": {
 		"scripts": ["background.js"],
 		"persistent": false

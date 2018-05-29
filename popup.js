@@ -53,9 +53,9 @@ chrome.tabs.query({url: "https://www.youtube.com/watch*"}, function(tabs) {
 		);
 	}
 	
-	var buttons =document.getElementsByClassName('button-play');
-	var volumes =document.getElementsByClassName('button-volume');
-	var sliders =document.getElementsByClassName('slider');
+	var buttons = document.getElementsByClassName('button-play');
+	var volumes = document.getElementsByClassName('button-volume');
+	var sliders = document.getElementsByClassName('slider');
 	
 	for (var b=0; b < buttons.length; b++) {
 		buttons[b].onclick = function(element) {
